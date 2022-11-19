@@ -1,0 +1,15 @@
+<div class="d-flex flex-wrap">
+  <article *ngFor="let a of articles; let i = index" class="p-1 col-6">
+    <div class="articles border border-dark rounded-sm p-3">
+      <h2>
+        {{ a.author }}
+      </h2>
+      <h6>
+        {{ a.title }}
+      </h6>
+      <div>
+        {{ a.description }}
+      </div>
+    </div>
+  </article>
+</div>
